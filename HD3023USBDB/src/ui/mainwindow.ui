@@ -1,0 +1,1496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1076</width>
+    <height>765</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <widget class="QWidget" name="Widget">
+   <layout class="QVBoxLayout" name="verticalLayout_9">
+    <item>
+     <widget class="QTabWidget" name="twDbgWin">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>627</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>13</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tbDbg">
+       <attribute name="title">
+        <string>调试</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_8">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <item>
+           <widget class="QGroupBox" name="grpConn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>191</width>
+              <height>261</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>11</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="title">
+             <string>连接信息</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout">
+             <item>
+              <widget class="QLabel" name="lbDevState">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>150</horstretch>
+                 <verstretch>110</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>150</width>
+                 <height>120</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>11</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>设备状态：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="lbDevName">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>150</horstretch>
+                 <verstretch>110</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>150</width>
+                 <height>120</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>设备名称：</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="grpPar">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>701</width>
+              <height>261</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="title">
+             <string>参数</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_13">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_2">
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_2">
+                   <item>
+                    <widget class="QLabel" name="lbSysPar">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>15</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>11</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>系统设置参数</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <layout class="QGridLayout" name="gridLayout">
+                     <item row="0" column="0">
+                      <widget class="QLabel" name="lbDevNo">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>微软雅黑</family>
+                         <pointsize>11</pointsize>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>     仪器编号：</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="0" column="1">
+                      <widget class="QLineEdit" name="etDevNo"/>
+                     </item>
+                     <item row="1" column="0">
+                      <widget class="QLabel" name="lbDevHv">
+                       <property name="font">
+                        <font>
+                         <pointsize>11</pointsize>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>     高       压：</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="1">
+                      <widget class="QLineEdit" name="etDevHv"/>
+                     </item>
+                     <item row="2" column="0">
+                      <widget class="QLabel" name="lbDevBG">
+                       <property name="font">
+                        <font>
+                         <pointsize>11</pointsize>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>     本       底：</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="1">
+                      <widget class="QLineEdit" name="etDevBG"/>
+                     </item>
+                     <item row="3" column="0">
+                      <widget class="QLabel" name="lbDevCorrCoe">
+                       <property name="font">
+                        <font>
+                         <pointsize>11</pointsize>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>     校正系数：</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="3" column="1">
+                      <widget class="QLineEdit" name="etDevCofft"/>
+                     </item>
+                     <item row="4" column="0">
+                      <widget class="QLabel" name="lbDevDeadTime">
+                       <property name="font">
+                        <font>
+                         <pointsize>11</pointsize>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>     死  时  间
+     修正系数：</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="4" column="1">
+                      <widget class="QLineEdit" name="etDevDeadTime"/>
+                     </item>
+                     <item row="5" column="0">
+                      <spacer name="horizontalSpacer_3">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                     <item row="5" column="1">
+                      <widget class="QPushButton" name="btnSysPar">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                         <horstretch>0</horstretch>
+                         <verstretch>10</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="minimumSize">
+                        <size>
+                         <width>71</width>
+                         <height>31</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <pointsize>11</pointsize>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="layoutDirection">
+                        <enum>Qt::RightToLeft</enum>
+                       </property>
+                       <property name="text">
+                        <string>设置</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <spacer name="verticalSpacer_2">
+                     <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>256</width>
+                       <height>13</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <widget class="Line" name="line_4">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_3">
+                   <item>
+                    <widget class="QLabel" name="lbRunPar">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>11</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>系统运行参数</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <layout class="QGridLayout" name="gridLayout_2">
+                     <item row="0" column="0">
+                      <widget class="QLabel" name="lbDevAutoOffTime">
+                       <property name="font">
+                        <font>
+                         <family>微软雅黑</family>
+                         <pointsize>11</pointsize>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>自 动 关 机 时 间：</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="0" column="1">
+                      <widget class="QLineEdit" name="etDevAutoOffTime"/>
+                     </item>
+                     <item row="1" column="0">
+                      <widget class="QLabel" name="lbDevAutoPrint">
+                       <property name="font">
+                        <font>
+                         <family>微软雅黑</family>
+                         <pointsize>11</pointsize>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>自动打印(开/关)：</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="1">
+                      <widget class="QLineEdit" name="etDevAutoPrint"/>
+                     </item>
+                     <item row="2" column="0">
+                      <widget class="QLabel" name="lbMeasTime">
+                       <property name="text">
+                        <string>测量时间(S)：</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="1">
+                      <widget class="QLineEdit" name="etMeasTime"/>
+                     </item>
+                     <item row="3" column="0">
+                      <widget class="QLabel" name="lbMeasNo">
+                       <property name="text">
+                        <string>测量次数：</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="3" column="1">
+                      <widget class="QLineEdit" name="etMeasNo"/>
+                     </item>
+                     <item row="4" column="0">
+                      <widget class="QLabel" name="lbMeasGroup">
+                       <property name="text">
+                        <string>测量组数：</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="4" column="1">
+                      <widget class="QLineEdit" name="etMeasGroup"/>
+                     </item>
+                     <item row="5" column="0">
+                      <spacer name="horizontalSpacer_4">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                     <item row="5" column="1">
+                      <widget class="QPushButton" name="btnRunPar">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                         <horstretch>0</horstretch>
+                         <verstretch>10</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="minimumSize">
+                        <size>
+                         <width>110</width>
+                         <height>31</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <pointsize>12</pointsize>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="layoutDirection">
+                        <enum>Qt::RightToLeft</enum>
+                       </property>
+                       <property name="text">
+                        <string>设置</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <spacer name="verticalSpacer_5">
+                     <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>256</width>
+                       <height>13</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout">
+                 <item>
+                  <spacer name="horizontalSpacer_6">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>250</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btnSavePar">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>10</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>71</width>
+                     <height>31</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>11</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="layoutDirection">
+                    <enum>Qt::RightToLeft</enum>
+                   </property>
+                   <property name="text">
+                    <string>保存参数</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btnLoadPar">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>10</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>71</width>
+                     <height>31</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>11</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="layoutDirection">
+                    <enum>Qt::RightToLeft</enum>
+                   </property>
+                   <property name="text">
+                    <string>载入参数</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="horizontalSpacer_5">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>250</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="Line" name="line_3">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_4">
+               <item>
+                <widget class="QLabel" name="lbRTC">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>21</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>时钟</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <layout class="QGridLayout" name="gridLayout_3">
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="lbRTCDay">
+                   <property name="font">
+                    <font>
+                     <pointsize>11</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>   日： </string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QLineEdit" name="etRtcDate"/>
+                 </item>
+                 <item row="5" column="0">
+                  <widget class="QLabel" name="lbRTCMin">
+                   <property name="font">
+                    <font>
+                     <pointsize>11</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>   分： </string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QLabel" name="lbRTCXingQi">
+                   <property name="font">
+                    <font>
+                     <pointsize>11</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string> 星期： </string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="1">
+                  <widget class="QLineEdit" name="etRtcH"/>
+                 </item>
+                 <item row="4" column="0">
+                  <widget class="QLabel" name="lbRTCHour">
+                   <property name="font">
+                    <font>
+                     <pointsize>11</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>   时： </string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="1">
+                  <widget class="QLineEdit" name="etRtcDay"/>
+                 </item>
+                 <item row="5" column="1">
+                  <widget class="QLineEdit" name="etRtcMin"/>
+                 </item>
+                 <item row="6" column="1">
+                  <widget class="QLineEdit" name="etRtcSec"/>
+                 </item>
+                 <item row="6" column="0">
+                  <widget class="QLabel" name="lbRTCSec">
+                   <property name="font">
+                    <font>
+                     <pointsize>11</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>   秒： </string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="lbRTCYear">
+                   <property name="font">
+                    <font>
+                     <pointsize>11</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>   年： </string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLineEdit" name="etRtcY">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="lbRTCMonth">
+                   <property name="font">
+                    <font>
+                     <pointsize>11</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>   月： </string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QLineEdit" name="etRtcM"/>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_3">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>146</width>
+                   <height>13</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btnRtc">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>10</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>51</width>
+                   <height>31</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>12</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="layoutDirection">
+                  <enum>Qt::LeftToRight</enum>
+                 </property>
+                 <property name="text">
+                  <string>设置</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="Line" name="line_2">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QGroupBox" name="grpOrderSend">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>155</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="title">
+             <string>命令发送</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <item>
+              <widget class="QPushButton" name="btnCmdStart">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>35</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>开始测量</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnCmdStop">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>35</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>停止</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnCmdHalt">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>35</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>关机</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnCmdFormat">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>35</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>格式化磁盘</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="grpMeasData">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>250</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="title">
+             <string>测量数据</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_6">
+             <item>
+              <widget class="QLabel" name="lbMeaCurPoint">
+               <property name="text">
+                <string>     当前点号：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="lbMeaCurTime">
+               <property name="text">
+                <string>     当前时间：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="lbMeaCurMode">
+               <property name="text">
+                <string>     测量模式：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="lbMeasFre">
+               <property name="text">
+                <string>     测量次数：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="lbMeadSets">
+               <property name="text">
+                <string>     测量组数：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="lbCountDown">
+               <property name="text">
+                <string>     倒计时(S)：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="lbMeaCurCnt">
+               <property name="text">
+                <string>测量值(10-8Gy/h)：</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox">
+            <property name="minimumSize">
+             <size>
+              <width>250</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="title">
+             <string>系数设置</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_12">
+             <item>
+              <layout class="QGridLayout" name="gridLayout_4">
+               <item row="0" column="0">
+                <widget class="QLabel" name="lbDevCofftDbg">
+                 <property name="text">
+                  <string>校正系数：</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLineEdit" name="etDevCofftDbg"/>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="lbDevDeadTimeDbg">
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>死 时 间
+修正系数：</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="etDevDeadTimeDbg"/>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <spacer name="verticalSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>86</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnDbgCoefft">
+               <property name="minimumSize">
+                <size>
+                 <width>130</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>设 置 系 数</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="grpDbgPar">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>330</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>700</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>11</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="title">
+             <string>调试参数设置</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_7">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_3">
+               <item>
+                <widget class="QLabel" name="lbDbgHv">
+                 <property name="minimumSize">
+                  <size>
+                   <width>50</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>高压：</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btnDbgDecHv">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>50</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>50</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>-</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="etDbgHv">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>50</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>60</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btnDbgIncHv">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>50</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>50</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>+</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnDbgHvSet">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>90</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>800</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>设 置 高 压</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="lbHvDigiValue">
+               <property name="text">
+                <string>高压测量数字值：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="lbHvAnaValue">
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tbFile">
+       <attribute name="title">
+        <string>文件</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_8" stretch="0,1">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_10" stretch="0,0">
+          <item>
+           <widget class="QTableWidget" name="listFileName">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <item>
+             <spacer name="horizontalSpacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>17</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnGetFileName">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>41</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>获取文件名</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnOpenStore">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>41</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>打开数据库</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_11" stretch="0,0">
+          <item>
+           <widget class="QTableWidget" name="tableFile">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>631</width>
+              <height>0</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QProgressBar" name="fileProcess">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="value">
+             <number>24</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="Line" name="line">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="lbLog">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>输出日志</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPlainTextEdit" name="etLog">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>931</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>160</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
